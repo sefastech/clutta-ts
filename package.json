@@ -1,14 +1,18 @@
 {
   "name": "clutta",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Clutta is a platform for observability and monitoring. Use this SDK to send pulse data, either individually or in batches.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clutta/clutta-ts"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Clutta",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.10.7",
