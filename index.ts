@@ -19,7 +19,6 @@ class Clutta {
     const command = `clutta send pulse --json '${JSON.stringify(payload)}'`;
     exec(command, (error, stdout, stderr) => {
       console.log(`stdout: ${stdout}`);
-      console.log(`stderr: ${stderr}`);
     });
   }
 
@@ -27,7 +26,6 @@ class Clutta {
     const command = `clutta send pulses --json '${JSON.stringify(pulses)}'`;
     exec(command, (error, stdout, stderr) => {
       console.log(`stdout: ${stdout}`);
-      // console.log(`stderr: ${stderr}`);
     });
   }
 }
