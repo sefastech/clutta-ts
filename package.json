@@ -1,6 +1,6 @@
 {
   "name": "clutta",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Clutta is a platform for observability and monitoring. Use this SDK to send pulse data, either individually or in batches.",
   "main": "index.js",
   "type": "module",
