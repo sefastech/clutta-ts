@@ -1,12 +1,11 @@
 
 export interface CluttaConfig {
   apiKey: string;
-  version: string;
 }
 
 export interface Pulse {
   signatureId: string;
-  chainId: string;
+  flowId: string;
   correlationId: string;
   sourceId: string;
   userId: string;
@@ -14,7 +13,3 @@ export interface Pulse {
   statusDescription: string;
 }
 
-
-export interface InstallerConfig {
-  version: string;
-}

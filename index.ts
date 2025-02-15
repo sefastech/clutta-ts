@@ -1,14 +1,11 @@
-import { exec } from 'child_process';
-import { CluttaConfig, Pulse } from './lib/types';
-import { CluttaInstaller } from './lib/installer';
+import { exec } from "child_process";
+import { CluttaConfig, Pulse } from "./lib/types";
 
 class Clutta {
   private apiKey: string;
 
   constructor(config: CluttaConfig) {
     this.apiKey = config.apiKey;
-
-    new CluttaInstaller({ version: config.version });
   }
 
   sendPulse(pulse: Pulse) {
@@ -18,7 +15,7 @@ class Clutta {
     };
     const command = `clutta send pulse --json '${JSON.stringify(payload)}'`;
     exec(command, (error, stdout, stderr) => {
-      console.log(`stdout: ${stdout}`);
+      console.log(`stdout: ${stdout} stderr: ${stderr}`);
     });
   }
 
